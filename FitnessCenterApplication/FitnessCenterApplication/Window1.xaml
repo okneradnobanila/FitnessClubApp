@@ -1,0 +1,21 @@
+﻿<Window x:Name="MainMenuWindow" x:Class="FitnessCenterApplication.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FitnessCenterApplication"
+        mc:Ignorable="d"
+        Title="Меню" Height="400" Width="600" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="AttendanceRegisterButton" Content="Запись на занятие" HorizontalAlignment="Left" Margin="50,60,0,0" VerticalAlignment="Top" Width="200" Height="25" Click="AttendanceRegisterButton_Click"/>
+        <Button x:Name="ScheduleButton" Content="Расписание" HorizontalAlignment="Right" Margin="0,60,50,0" VerticalAlignment="Top" Width="200" Height="25" Click="ScheduleButton_Click"/>
+        <Button x:Name="ClientsButton" Content="Клиенты" HorizontalAlignment="Left" Margin="50,90,0,0" VerticalAlignment="Top" Width="200" Height="25" Click="ClientsButton_Click"/>
+        <Button x:Name="AbonnementsButton" Content="Абонементы" HorizontalAlignment="Left" Margin="50,120,0,0" VerticalAlignment="Top" Width="200" Height="25" Click="AbonnementsButton_Click"/>
+        <Button x:Name="TrainersButton" Content="Тренера" HorizontalAlignment="Right" Margin="0,90,50,0" Width="200" Height="25" VerticalAlignment="Top" Click="TrainersButton_Click"/>
+        <Button x:Name="AdministratorsButton" Content="Администраторы" HorizontalAlignment="Right" Margin="0,0,50,50" VerticalAlignment="Bottom" Width="200" Height="25" Click="AdministratorsButton_Click"/>
+        <Button x:Name="RoomsButton" Content="Помещения" HorizontalAlignment="Right" Margin="0,120,50,0" Width="200" Height="25" VerticalAlignment="Top" Click="RoomsButton_Click"/>
+        <Button x:Name="AbonnementsSales" Content="Продажи абонементов" HorizontalAlignment="Left" Margin="50,150,0,0" VerticalAlignment="Top" Width="200" Height="25" Click="AbonnementsSales_Click"/>
+        <Button x:Name="ClassesButton" Content="Виды занятий" HorizontalAlignment="Right" Margin="0,150,50,0" VerticalAlignment="Top" Width="200" Height="25" Click="ClassesButton_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,37 @@
+﻿<Window x:Class="FitnessCenterApplication.Window6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FitnessCenterApplication"
+        mc:Ignorable="d"
+        Title="Расписание" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <DataGrid x:Name="ScheduleDataGrid" HorizontalAlignment="Left" Height="190" Margin="50,50,0,0" VerticalAlignment="Top" Width="700"/>
+        <TextBox x:Name="Start_tb" HorizontalAlignment="Left" Height="23" Margin="210,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="Info_tb" HorizontalAlignment="Left" Height="23" Margin="600,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="Trainer_tb" HorizontalAlignment="Left" Height="23" Margin="530,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="Room_tb" HorizontalAlignment="Left" Height="23" Margin="460,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="ID_tb" HorizontalAlignment="Left" Height="23" Margin="50,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="Class_tb" HorizontalAlignment="Left" Height="23" Margin="390,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="End_tb" HorizontalAlignment="Left" Height="23" Margin="300,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="Date_tb" HorizontalAlignment="Left" Height="23" Margin="120,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="NewID_tb" HorizontalAlignment="Left" Height="23" Margin="50,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="NewDate_tb" HorizontalAlignment="Left" Height="23" Margin="120,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="NewStart_tb" HorizontalAlignment="Left" Height="23" Margin="210,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="NewEnd_tb" HorizontalAlignment="Left" Height="23" Margin="300,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="NewClass_tb"  HorizontalAlignment="Left" Height="23" Margin="390,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="NewRoom_tb" HorizontalAlignment="Left" Height="23" Margin="460,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="NewTrainer_tb" HorizontalAlignment="Left" Height="23" Margin="530,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="NewInfo_tb" HorizontalAlignment="Left" Height="23" Margin="600,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
+        <Button x:Name="AddButton" Content="Добавить" HorizontalAlignment="Left" Margin="50,340,0,0" VerticalAlignment="Top" Width="230" Click="AddButton_Click"/>
+        <Button x:Name="DeleteButton" Content="Удалить" HorizontalAlignment="Left" Margin="520,340,0,0" VerticalAlignment="Top" Width="230" Click="DeleteButton_Click"/>
+        <Button x:Name="ChangeButton" Content="Изменить" HorizontalAlignment="Left" Margin="285,340,0,0" VerticalAlignment="Top" Width="230" Click="ChangeButton_Click"/>
+        <Button x:Name="ReloadButton" Content="" HorizontalAlignment="Left" Margin="50,20,0,0" VerticalAlignment="Top" Width="25" Height="25" Click="ReloadButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="C:\Users\acer\source\repos\FitnessCenterApplication\reload_icon.ico" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

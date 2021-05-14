@@ -1,0 +1,31 @@
+﻿<Window x:Class="FitnessCenterApplication.Window5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FitnessCenterApplication"
+        mc:Ignorable="d"
+        Title="Продажи абонементов" Height="400" Width="600" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <DataGrid x:Name="AbonnementsSalesDataGrid" HorizontalAlignment="Left" Height="175" Margin="50,50,0,0" VerticalAlignment="Top" Width="500"/>
+        <TextBox x:Name="ID_tb"  HorizontalAlignment="Left" Height="23" Margin="50,243,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="80"/>
+        <TextBox x:Name="NewStart_tb"  HorizontalAlignment="Left" Height="23" Margin="305,271,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="NewClient_tb"  HorizontalAlignment="Left" Height="23" Margin="135,271,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="80"/>
+        <TextBox x:Name="Abon_tb" HorizontalAlignment="Left" Height="23" Margin="220,243,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="80"/>
+        <TextBox x:Name="NewEnd_tb" HorizontalAlignment="Left" Height="23" Margin="430,271,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="NewID_tb"  HorizontalAlignment="Left" Height="23" Margin="50,271,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="80"/>
+        <TextBox x:Name="NewAbon_tb"  HorizontalAlignment="Left" Height="23" Margin="220,271,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="80"/>
+        <TextBox x:Name="Client_tb" HorizontalAlignment="Left" Height="23" Margin="135,243,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="80"/>
+        <TextBox x:Name="Start_tb" HorizontalAlignment="Left" Height="23" Margin="305,243,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="End_tb" HorizontalAlignment="Left" Height="23" Margin="430,243,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="AddButton" Content="Добавить" HorizontalAlignment="Left" Margin="50,315,0,0" VerticalAlignment="Top" Width="163" Click="AddButton_Click"/>
+        <Button x:Name="DeleteButton" Content="Удалить" HorizontalAlignment="Left" Margin="218,315,0,0" VerticalAlignment="Top" Width="163" Click="DeleteButton_Click"/>
+        <Button x:Name="ChangeButton" Content="Изменить" HorizontalAlignment="Left" Margin="386,315,0,0" VerticalAlignment="Top" Width="164" Click="ChangeButton_Click"/>
+        <Button x:Name="ReloadButton" Content="" HorizontalAlignment="Left" Margin="50,20,0,0" VerticalAlignment="Top" Width="25" Height="25" Click="ReloadButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="C:\Users\acer\source\repos\FitnessCenterApplication\reload_icon.ico" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
